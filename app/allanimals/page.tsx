@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import AnimalCards from '../components/AnimalCards'
 
@@ -32,24 +33,52 @@ export default function AllAnimals() {
     ]; // This is a placeholder for the actual Database
 
   return (
-    <div className="py-5 px-16">
-        <div>
-            <h1 className="text-4xl font-bold">
-                Welcome to the animal selections page!
+    <div>
+        <div className="h-40 bg-blue-200 w-full relative">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.hluXozT2-PbsYzBAYOEDtAHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Image Of Zoo" className="absolute w-full object-cover h-full"/>
+            <h1 className="text-4xl font-bold italic absolute m-2 p-1 bg-gray-50 rounded-2xl">
+                    Here are our animals!
             </h1>
-            <h2 className="text-2xl">
-                You'll be able to find all the animals at our zoo here!
-            </h2>
-            <p className='py-5'>
-                Press on an animal card to find out more info
-            </p>
         </div>
+        <div className="px-16">
+            <div>
+                <h2 className="text-2xl">
+                    You'll be able to find all the animals at our zoo here!
+                </h2>
+            </div>
 
-        <section className="w-full flex flex-row flex-wrap gap-3 justify-center">
-          {animals.map(o => (
-            <AnimalCards key={o.name} name={o.name} habitat={o.habitat} uri={o.uri}/>
-            ) )}
-        </section>
+            <section className="w-full flex flex-row flex-wrap gap-4 justify-center py-4">
+                <form onSubmit={(e) => {e.preventDefault();}} className='flex justify-items-center w-full gap-5'>
+                    <select defaultValue="" onChange={() => {}} name="Amt Show" className='flex-1 bg-gray-200 border-black border-solid border-2 rounded-lg'>
+                        <option value="" disabled>Amt Shown</option>
+                        <option value="5">5 Shown</option>
+                        <option value="10">10 Shown</option>
+                    </select>
+
+                    <input onChange={() => {}} type="text" placeholder="Search" className='flex-4 bg-gray-200 border-black border-solid border-2 rounded-lg text-center' />
+                    
+                    <select defaultValue="" onChange={() => {}} name="Filter" className='flex-1 bg-gray-200 border-black border-solid border-2 rounded-lg'>
+                        <option value="" disabled>Filter</option>
+                        <option value="Name">Name</option>
+                        <option value="Habitat">Habitat</option>
+                    </select>                
+                </form>
+            </section>
+            
+            <div className="w-full h-full flex flex-row flex-wrap gap-4 justify-center">
+                {animals.map(o => (
+                    <AnimalCards key={o.name} name={o.name} habitat={o.habitat} uri={o.uri}/>
+                ) )}
+            </div>
+            <section className="h-120 flex no-wrap items-center gap-10">
+                <div className="h-100 bg-blue-200 flex-1 border-2 border-solid border-black rounded-2xl">
+                    <p>Text should go here describing stuff of the zoo</p>
+                </div>
+                <div className="h-100 w-70 bg-blue-800 border-2 border-solid border-black rounded-2xl relative">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.hluXozT2-PbsYzBAYOEDtAHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Image Of Zoo Keeper" className="w-full h-full absolute rounded-xl"/>
+                </div>
+            </section>
+        </div>
     </div>
   )
 }

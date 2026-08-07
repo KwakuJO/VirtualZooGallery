@@ -22,14 +22,14 @@ export default function AnimalCards({name, habitat, uri}: {name:string, habitat:
     return (
         <Link href={pageLink} className='
             transition-transform duration-250 transform hover:scale-110
-            relative border-black border-2 rounded-xl 
-            h-30 w-50 hover:shadow-md
+            relative border-black border-3 rounded-2xl
+            h-30 w-2/9 hover:shadow-md
             '>
-            <div className="w-full h-full">
+            <div className="w-full h-full relative">
                 <img 
                     src={uri ? uri: "https://th.bing.com/th/id/R.4fec58c0a98a8df7b2586332a591cccd?rik=Qt6aVRWl16qN6A&pid=ImgRaw&r=0"}
                     alt={"Image Of " + name}
-                    className='absolute bottom-0 right-0 rounded-4xl max-w-full max-h-full'
+                    className='right-0 w-full h-full object-cover rounded-xl'
                 />
             </div>
             <div className="absolute top-0 rounded-xl p-2">
