@@ -1,27 +1,44 @@
-import React from 'react'
-import Link from 'next/link'
-{/* 
-    This Navbar currently only goes to Home page and
-    allanimals page (Modify This if needed)
-    
+import React from "react";
+import Link from "next/link";
+
+/*
+    This Navbar links to the main pages of the
+    Virtual Zoo Gallery.
+
     Last modified by: Kwaku Otchere
-    
-*/}
+    Last modified by: An Luu (08/10/2026)
+*/
+
 export default function NavBar() {
   return (
-    <nav className="w-full bg-gray-400 flex items-center justify-around">
-        <Link href="/" className="hover:bg-gray-300 p-5">
-            Home
-        </Link>  
-        <Link href="/allanimals/" className="hover:bg-gray-300 p-5">
-            All Animals Page
-        </Link>  
-        <Link href="" className="hover:bg-gray-300 p-5">
-            Option 3
-        </Link>  
-        <Link href="" className="hover:bg-gray-300 p-5">
-            Option 4
-        </Link>  
+    <nav className="w-full bg-green-700 text-white flex items-center justify-around">
+      <Link
+        href="/"
+        className="p-5 hover:bg-green-600 transition-colors"
+      >
+        Home
+      </Link>
+
+      <Link
+        href="/allanimals"
+        className="p-5 hover:bg-green-600 transition-colors"
+      >
+        All Animals
+      </Link>
+
+      <Link
+        href="/events"
+        className="p-5 hover:bg-green-600 transition-colors"
+      >
+        Events
+      </Link>
+
+      <Link
+        href="/about"
+        className="p-5 hover:bg-green-600 transition-colors"
+      >
+        About the Zoo
+      </Link>
     </nav>
-  )
+  );
 }
