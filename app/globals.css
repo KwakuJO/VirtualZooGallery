@@ -3,7 +3,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  /* --background: #ffffff; */
+  --background: lab(98.6846% -1.79058 9.77662);
   --foreground: #171717;
 }
 
