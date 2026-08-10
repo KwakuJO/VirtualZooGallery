@@ -78,7 +78,7 @@ export default function AllAnimals() {
     ];
 
     return (
-        <div className="min-h-screen bg-white py-8 px-16 text-black">
+        <div className="min-h-screen bg-yellow-50 py-8 px-16 text-black">
             <div className="text-center mb-8">
                 <h1 className="text-4xl font-bold text-green-600">
                     Welcome to the Jungle!

@@ -9,17 +9,17 @@ import Link from 'next/link'
 */}
 export default function NavBar() {
   return (
-    <nav className="w-full bg-gray-400 flex items-center justify-around">
-        <Link href="/" className="hover:bg-gray-300 p-5">
+    <nav className="w-full bg-green-700 flex items-center justify-around border-b-7 border-solid border-green-900 text-white">
+        <Link href="/" className="hover:bg-green-600 py-5 flex-1 text-center">
             Home
         </Link>  
-        <Link href="/allanimals/" className="hover:bg-gray-300 p-5">
+        <Link href="/allanimals/" className="hover:bg-green-600 py-5 flex-1 text-center">
             All Animals Page
         </Link>  
-        <Link href="" className="hover:bg-gray-300 p-5">
+        <Link href="" className="hover:bg-green-600 py-5 flex-1 text-center">
             Option 3
         </Link>  
-        <Link href="" className="hover:bg-gray-300 p-5">
+        <Link href="" className="hover:bg-green-600 py-5 flex-1 text-center">
             Option 4
         </Link>  
     </nav>
