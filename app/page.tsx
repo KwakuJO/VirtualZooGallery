@@ -12,8 +12,8 @@ import RectangleTextBox from "./components/RectangleTextBox";
 */}
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans dark:bg-black">
-      <main className="flex w-full flex-wrap items-center justify-between dark:bg-black sm:items-start">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans">
+      <main className="flex w-full flex-wrap items-center justify-between sm:items-start">
         <div className="bg-green-700 w-full h-100 relative">
           <div className="items-center absolute w-full justify-center flex top-2">
             <h1 className="text-white bg-green-700/90 p-2 rounded-2xl text-5xl text-center border-b-7 border-solid border-green-900">Welcome to the zoo!</h1>
