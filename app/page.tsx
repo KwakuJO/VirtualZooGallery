@@ -3,13 +3,6 @@ import Link from "next/link";
 import RectangleImageCard from "./components/RectangleImageCard";
 import RectangleTextBox from "./components/RectangleTextBox";
 
-{/*
-  This is the Home / Landing page. People will see this first
-  (Modify This)
-  
-  Last modified by: Kwaku Otchere
-  
-*/}
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center font-sans">
@@ -45,20 +38,12 @@ export default function Home() {
               />
             </section>
             <section className="w-full flex flex-wrap gap-5">
-              <RectangleImageCard altText="Conservation Efforts" image="https://th.bing.com/th/id/R.3057b670ae23587586a33bc460439573?rik=n9LEW43JZpo4sQ&pid=ImgRaw&r=0"/>
-              <RectangleTextBox title="Conservation Matters" text="At your local zoo..." />
+              <RectangleImageCard altText="Lorem Ipsum" image="https://th.bing.com/th/id/R.3057b670ae23587586a33bc460439573?rik=n9LEW43JZpo4sQ&pid=ImgRaw&r=0"/>
+              <RectangleTextBox title="Lorem Ipsum" text="
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam deleniti consequuntur odio modi distinctio officia aperiam ut voluptatibus explicabo, quas molestias dolores quisquam quia quaerat ab. Eos, sit veritatis! Velit." />
             </section>
-            <section className="w-full flex flex-wrap gap-5">
-              <RectangleTextBox title="John" text="adwawd" />
-              <RectangleImageCard altText="j"/>
-            </section>
-          </div>
-          <div>
-            
           </div>
         </div>
-        {/* <p>Page works fine</p> */}
-        {/* <Link href="/allanimals">TESTING Delete Later. To All Animals Page</Link> */}
       </main>
     </div>
   );
